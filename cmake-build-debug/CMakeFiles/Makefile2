@@ -95,12 +95,12 @@ lab01/clean: lab01/CMakeFiles/lab1.dir/clean
 lab01/CMakeFiles/lab1.dir/all:
 	$(MAKE) $(MAKESILENT) -f lab01\CMakeFiles\lab1.dir\build.make lab01/CMakeFiles/lab1.dir/depend
 	$(MAKE) $(MAKESILENT) -f lab01\CMakeFiles\lab1.dir\build.make lab01/CMakeFiles/lab1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Egyetem\CPP\cpp-labor\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target lab1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Egyetem\CPP\cpp-labor\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target lab1"
 .PHONY : lab01/CMakeFiles/lab1.dir/all
 
 # Build rule for subdir invocation for target.
 lab01/CMakeFiles/lab1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Egyetem\CPP\cpp-labor\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Egyetem\CPP\cpp-labor\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 lab01/CMakeFiles/lab1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Egyetem\CPP\cpp-labor\cmake-build-debug\CMakeFiles 0
 .PHONY : lab01/CMakeFiles/lab1.dir/rule

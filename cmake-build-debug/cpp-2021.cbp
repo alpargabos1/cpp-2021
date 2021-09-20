@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Egyetem/CPP/cpp-labor/lab01/function.cpp">
+			<Option target="lab1"/>
+		</Unit>
+		<Unit filename="D:/Egyetem/CPP/cpp-labor/lab01/function.h">
+			<Option target="lab1"/>
+		</Unit>
 		<Unit filename="D:/Egyetem/CPP/cpp-labor/lab01/main.cpp">
 			<Option target="lab1"/>
 		</Unit>

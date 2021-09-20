@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Egyetem/CPP/cpp-labor/lab01/function.cpp" "D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab01/CMakeFiles/lab1.dir/function.cpp.obj"
   "D:/Egyetem/CPP/cpp-labor/lab01/main.cpp" "D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab01/CMakeFiles/lab1.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
