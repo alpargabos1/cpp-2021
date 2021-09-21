@@ -65,12 +65,60 @@ pair<double, double> max2(double array[], int numElements) {
     return result;
 }
 
-int countWords(string text){
+double stringSum(int argc, char *argv[]) {
+
+    double num, sum = 0;
+    for (int i = 0; i < argc; ++i) {
+        istringstream iss(argv[i]);
+        if (iss >> num) {
+            sum += num;
+        }
+    }
+    return sum;
+}
+
+int countWords(string text) {
     int sum = 0;
     string ex = " ";
     istringstream iss(text);
-    while(iss >> ex){
-        sum ++;
+    while (iss >> ex) {
+        sum++;
     }
     return sum;
+}
+
+string code(string text) {
+    for (char &i: text) {
+        if ((i >= 'a' && i < 'z') || (i >= 'A' && i < 'Z')) {
+            i++;
+        }
+        if (i == 'z') {
+            i = 'a';
+        }
+        if (i == 'Z') {
+            i = 'A';
+        }
+    }
+    return text;
+}
+
+string capitalizeWords(string text) {
+    if (isalpha(text[0])) {
+        text[0] = toupper(text[0]);
+    }
+    for (int i = 1; i < text.length(); ++i) {
+        if (text[i - 1] == ' ') {
+            text[i] = toupper(text[i]);
+        } else {
+            text[i] = tolower(text[i]);
+        }
+    }
+    return text;
+}
+
+void readLines() {
+    string line;
+    cout << "String 4\n\tEnter a line: " << endl;
+    getline(cin, line);
+    cout << capitalizeWords(line) << endl;
 }

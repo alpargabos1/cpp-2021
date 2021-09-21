@@ -20,8 +20,14 @@ double stddev(double [], int);
 
 pair<double, double> max2(double [], int);
 
-int stringSum(string);
+double stringSum(int, char *argv[]);
 
 int countWords(string);
+
+string code(string);
+
+string capitalizeWords(string);
+
+void readLines();
 
 #endif //CPP_2021_FUNCTION_H
