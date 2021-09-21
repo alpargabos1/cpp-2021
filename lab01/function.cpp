@@ -116,6 +116,7 @@ string capitalizeWords(string text) {
     return text;
 }
 
+
 void readLines() {
     string line;
     cout << "String 4\n\tEnter a line: " << endl;
