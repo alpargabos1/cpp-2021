@@ -5,7 +5,7 @@
 		<Option title="cpp-2021"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lab01\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lab01\;CMake Files\lab02\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/Egyetem/CPP/cpp-labor/cmake-build-debug"/>
@@ -79,6 +79,48 @@
 					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab01/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="lab2">
+				<Option output="D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/lab2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/Makefile&quot;  VERBOSE=1 lab2"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2/fast">
+				<Option output="D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/lab2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/Makefile&quot;  VERBOSE=1 lab2/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="D:/Egyetem/CPP/cpp-labor/lab01/function.cpp">
 			<Option target="lab1"/>
@@ -89,11 +131,17 @@
 		<Unit filename="D:/Egyetem/CPP/cpp-labor/lab01/main.cpp">
 			<Option target="lab1"/>
 		</Unit>
+		<Unit filename="D:/Egyetem/CPP/cpp-labor/lab02/main.cpp">
+			<Option target="lab2"/>
+		</Unit>
 		<Unit filename="D:/Egyetem/CPP/cpp-labor/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="D:/Egyetem/CPP/cpp-labor/lab01/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab01\"/>
+		</Unit>
+		<Unit filename="D:/Egyetem/CPP/cpp-labor/lab02/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab02\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

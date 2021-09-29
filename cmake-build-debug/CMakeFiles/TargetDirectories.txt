@@ -3,3 +3,6 @@ D:/Egyetem/CPP/cpp-labor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab01/CMakeFiles/lab1.dir
 D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab01/CMakeFiles/edit_cache.dir
 D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab01/CMakeFiles/rebuild_cache.dir
+D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/CMakeFiles/lab2.dir
+D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/CMakeFiles/edit_cache.dir
+D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab02/CMakeFiles/rebuild_cache.dir

@@ -5,7 +5,7 @@
 		<Option title="lab1"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lab01\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lab01\;CMake Files\lab02\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/Egyetem/CPP/cpp-labor/cmake-build-debug/lab01"/>
@@ -74,6 +74,9 @@
 		</Unit>
 		<Unit filename="D:/Egyetem/CPP/cpp-labor/lab01/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab01\"/>
+		</Unit>
+		<Unit filename="D:/Egyetem/CPP/cpp-labor/lab02/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab02\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
