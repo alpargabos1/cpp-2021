@@ -109,3 +109,10 @@ pair<Point, Point> farthestPoints(Point *points, int numPoints) {
     return maxPair;
 }
 
+bool comparator(const Point &a, const Point &b) {
+    return a.getX() < b.getX();
+}
+
+void sortPoints(Point *points, int numPoints) {
+    sort(points, points + numPoints, comparator);
+}

@@ -48,6 +48,10 @@ int main() {
     fp.second.print();
     cout << endl << endl;
 
+    //11
+    sortPoints(pts, len);
+    cout << "Points sorted by X:" << endl;
+    printArray(pts, len);
 
     delete pp1;
     delete pp2;

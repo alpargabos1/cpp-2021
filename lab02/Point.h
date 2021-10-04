@@ -9,6 +9,7 @@
 #include <cmath>
 #include <fstream>
 #include <ctime>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -43,5 +44,8 @@ pair<Point, Point> closestPoints(Point *points, int numPoints);
 
 pair<Point, Point> farthestPoints(Point *points, int numPoints);
 
+bool comparator(const Point &a, const Point &b);
+
+void sortPoints(Point* points, int numPoints);
 
 #endif //LAB2_POINT_H
