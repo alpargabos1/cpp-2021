@@ -30,9 +30,6 @@ PointSet::PointSet(int n) {
         }
     }
     computeDistances();
-//    for (int i = 0; i < distances.size(); ++i) {
-//        cout << distances[i] << " " << endl;
-//    }
 }
 
 double PointSet::maxDistance() const {
@@ -55,22 +52,26 @@ void PointSet::printPoints() const {
 }
 
 void PointSet::printDistances() const {
-    for(auto dis:distances){
+    for (auto dis: distances) {
         cout << dis << " ";
     }
     cout << endl;
 }
 
 void PointSet::sortPointsX() {
-
+    sort(points.begin(), points.end(), [](const Point &a, const Point &b) {
+        return a.getX() < b.getX();
+    });
 }
 
 void PointSet::sortPointsY() {
-
+    sort(points.begin(), points.end(), [](const Point &a, const Point &b) {
+        return a.getY() < b.getY();
+    });
 }
 
 void PointSet::sortDistances() {
-
+    sort(distances.begin(), distances.end());
 }
 
 int PointSet::numDistinctDistances() {
@@ -86,3 +87,4 @@ void PointSet::init() {
         }
     }
 }
+

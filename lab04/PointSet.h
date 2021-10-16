@@ -58,4 +58,6 @@ public:
     void init();
 };
 
+void printAndSort();
+
 #endif //MAIN_CPP_POINTSET_H

@@ -22,5 +22,23 @@ int main() {
         cout << setw(16) << pSet.numDistinctDistances() << endl;
         n = n << 1;
     }
+    cout << endl << endl;
+
+///Sort fuggvenyek tesztelese
+    PointSet pS2(5);
+    cout << "Generalt pontok: ";
+    pS2.printPoints();
+
+    pS2.sortPointsX();
+    cout << "X szerint rendezve: ";
+    pS2.printPoints();
+
+    pS2.sortPointsY();
+    cout << "Y szerint rendezve: ";
+    pS2.printPoints();
+
+    pS2.sortDistances();
+    cout << "Tavolsagok rendezve: ";
+    pS2.printDistances();
     return 0;
 }
