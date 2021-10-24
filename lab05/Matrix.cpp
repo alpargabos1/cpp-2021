@@ -28,21 +28,22 @@ Matrix::Matrix(const Matrix &what) {
     }
 }
 
-//Matrix::Matrix(Matrix &&what) {
-//    this->mRows = what.mRows;
-//    this->mCols = what.mCols;
-//    mElements = new double *[mRows];
-//    for (int i = 0; i < mRows; ++i) {
-//        mElements[i] = new double[mCols];
-//    }
-//
-//    what.mRows = 0;
-//    what.mCols = 0;
-//    mElements = nullptr;
-//    for (int i = 0; i < mRows; ++i) {
-//        mElements[i] = nullptr;
-//    }
-//}
+Matrix::Matrix(Matrix &&what) {
+    this->mRows = what.mRows;
+    this->mCols = what.mCols;
+    mElements = new double *[mRows];
+    for (int i = 0; i < mRows; ++i) {
+        mElements[i] = new double[mCols];
+    }
+
+    what.mRows = 0;
+    what.mCols = 0;
+    for (int i = 0; i < mRows; ++i) {
+        what.mElements[i] = nullptr;
+    }
+    what.mElements = nullptr;
+
+}
 
 Matrix::~Matrix() {
     for (int i = 0; i < mRows; ++i) {
@@ -113,7 +114,7 @@ Matrix operator*(const Matrix &x, const Matrix &y) {
 }
 
 Matrix &Matrix::operator=(const Matrix &mat) {
-    if (this->mRows != this->mRows || mat.mCols != mat.mCols) {
+    if (this->mRows != mat.mRows || this->mCols != mat.mCols) {
         throw out_of_range("Nem megfelelo meretek!");
     }
     for (int i = 0; i < mat.mRows; ++i) {
