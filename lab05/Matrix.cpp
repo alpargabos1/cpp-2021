@@ -31,16 +31,10 @@ Matrix::Matrix(const Matrix &what) {
 Matrix::Matrix(Matrix &&what) {
     this->mRows = what.mRows;
     this->mCols = what.mCols;
-    mElements = new double *[mRows];
-    for (int i = 0; i < mRows; ++i) {
-        mElements[i] = new double[mCols];
-    }
+    mElements = what.mElements;
 
     what.mRows = 0;
     what.mCols = 0;
-    for (int i = 0; i < mRows; ++i) {
-        what.mElements[i] = nullptr;
-    }
     what.mElements = nullptr;
 
 }
@@ -122,14 +116,14 @@ Matrix &Matrix::operator=(const Matrix &mat) {
             this->mElements[i][j] = mat.mElements[i][j];
         }
     }
+    return *this;
 }
 
 ostream &operator<<(ostream &os, const Matrix &mat) {
     for (int i = 0; i < mat.mRows; ++i) {
         for (int j = 0; j < mat.mCols; ++j) {
-            os << mat.mElements[i][j] << " ";
+            os << mat.mElements[i][j];
         }
-        os << endl;
     }
     return os;
 }
