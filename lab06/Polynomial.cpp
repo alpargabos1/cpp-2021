@@ -107,7 +107,22 @@ Polynomial operator-(const Polynomial &a, const Polynomial &b) {
         return res + (-b);
     }
 
-    Polynomial res(b);
-    return res + (-a);
+    Polynomial res(-b);
+    return res + a;
 
+}
+
+Polynomial operator*(const Polynomial &a, const Polynomial &b) {
+    double temp[a.capacity + b.capacity + 1];
+    for (int i = 0; i <= a.capacity + b.capacity; ++i) {
+        temp[i] = 0;
+    }
+    Polynomial res(a.capacity + b.capacity, temp);
+
+    for (int i = 0; i <= b.capacity; ++i) {
+        for (int j = 0; j <= a.capacity; ++j) {
+            res.coefficients[i+j] += a.coefficients[j] * b.coefficients[i];
+        }
+    }
+    return res;
 }

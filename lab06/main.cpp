@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-    double co[] = {4, 3, 5, 2};
-    Polynomial p1(3, co);
+    double co[] = {4, 3, 2};
+    Polynomial p1(2, co);
     cout << p1;
     Polynomial p2(p1);
     cout << p2;
@@ -35,7 +35,8 @@ int main() {
     cout << endl << "- operator: " << -p2;
 
     cout << "p4 + p2: " << (p4 + p2);
-    cout << "p4 - p2: " << (p2 - p4);
+    cout << "p4 - p2: " << (p4 - p2);
+    cout << "p2 * p4: " << (p2 * p4);
 
     return 0;
 }
