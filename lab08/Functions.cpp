@@ -4,6 +4,7 @@
 
 #include "Functions.h"
 
+
 vector<string> fruits{
         "melon", "strawberry", "raspberry", "apple", "banana", "walnut", "lemon"
 };
@@ -113,11 +114,14 @@ void feladat8() {
 void feladat9() {
     string abc = "abcdefghijklmnopqrstuvwxyz";
     random_shuffle(abc.begin(), abc.end());
-    cout << abc;
+    cout << endl << abc;
 
-    sort(months.begin(),months.end(),[](const string& a, const string& b){
-        return lexicographical_compare(a.begin(),a.end(),b.begin(),b.end(),[abc](const char& c, const char& d){
-            find(abc.begin(), abc.end(),c)<find(abc.begin(), abc.end(),d);
-        })
+    sort(months.begin(), months.end(), [abc](const string &x, const string &y) {
+        return lexicographical_compare(x.begin(), x.end(), y.begin(), y.end(), [abc](const char &c1, const char &c2) {
+            return find(abc.begin(), abc.end(), c1) < find(abc.begin(), abc.end(), c2);
+        });
     });
+    for (string i: months) {
+        cout << i << endl;
+    }
 }
