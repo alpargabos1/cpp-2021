@@ -10,8 +10,8 @@ int main() {
     cout<<exam.numStudents()<<endl;
     exam.readGradesOfSubject(subjects[0], "romanian.txt");
     exam.readGradesOfSubject(subjects[1], "hungarian.txt");
-    exam.readGradesOfSubject(subjects[2], "math.txt");
-//    exam.computeFinalGrades();
+    exam.readGradesOfSubject(subjects[2], "maths.txt");
+    exam.computeFinalGrades();
 //    cout<<exam.numPassed()<<endl;
 //// Service
 //    IGraduation * graduation = new GraduationInfo( exam );

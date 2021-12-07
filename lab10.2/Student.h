@@ -31,6 +31,8 @@ public:
     void addGrade(const string &, double);
 
     double getAverage();
+
+    void computeAverage();
 };
 
 

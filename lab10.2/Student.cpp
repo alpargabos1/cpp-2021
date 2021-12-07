@@ -33,3 +33,13 @@ void Student::addGrade(const string &subject, double grade) {
     this->grades.insert(pair<string, double>(subject, grade));
 }
 
+void Student::computeAverage() {
+    if (grades.size() != 3) {
+        exit(33);
+    }
+    for (const auto &g: grades) {
+        average += g.second;
+    }
+    average /= 3;
+}
+

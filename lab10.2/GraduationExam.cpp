@@ -39,14 +39,17 @@ void GraduationExam::readGradesOfSubject(const string &subject, const string &fi
 }
 
 void GraduationExam::computeFinalGrades() {
+    for(auto s : students){
+        s.second.computeAverage();
+        cout << s.second.getId() << " " << s.second.getAverage() << endl;
+    }
 
 }
 
 map<string, double> GraduationExam::getGrades(int studentID) const {
     map<string, double> grade;
-    for(auto s : students){
 
-    }
+    return grade;
 }
 
 int GraduationExam::numPassed() const {
