@@ -12,13 +12,13 @@ int main() {
     exam.readGradesOfSubject(subjects[1], "hungarian.txt");
     exam.readGradesOfSubject(subjects[2], "maths.txt");
     exam.computeFinalGrades();
-//    cout<<exam.numPassed()<<endl;
+    cout<<exam.numPassed()<<endl;
 //// Service
-//    IGraduation * graduation = new GraduationInfo( exam );
-//    cout<<"Graduation Information"<<endl;
-//    cout<<"Number of enrolled students: "<<graduation->getNumEnrolled()<<endl;
-//    cout<<"Number of passed students: "<<graduation->getNumPassed()<<endl;
-//    cout<<"Number of failed students: "<<graduation->getNumFailed()<<endl;
+    IGraduation * graduation = new GraduationInfo( exam );
+    cout<<"Graduation Information"<<endl;
+    cout<<"Number of enrolled students: "<<graduation->getNumEnrolled()<<endl;
+    cout<<"Number of passed students: "<<graduation->getNumPassed()<<endl;
+    cout<<"Number of failed students: "<<graduation->getNumFailed()<<endl;
 //    int ID;
 //    for( ;; ){
 //        cout<<"Enter an ID <0 for termination>: ";
@@ -34,6 +34,6 @@ int main() {
 //            cout<<e.what()<<endl;
 //        }
 //    }
-//    delete graduation;
+    delete graduation;
     return 0;
 }

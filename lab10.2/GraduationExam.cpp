@@ -34,24 +34,35 @@ void GraduationExam::readGradesOfSubject(const string &subject, const string &fi
     }
     while (!fGrades.eof()) {
         fGrades >> tempId >> tempGrade;
-        students.find(tempId)->second.addGrade(subject,tempGrade);
+        students.find(tempId)->second.addGrade(subject, tempGrade);
     }
 }
 
 void GraduationExam::computeFinalGrades() {
-    for(auto s : students){
-        s.second.computeAverage();
-        cout << s.second.getId() << " " << s.second.getAverage() << endl;
+    for (const auto& s: students) {
+        it = students.find(s.first);
+        it->second.computeAverage();
     }
 
 }
 
 map<string, double> GraduationExam::getGrades(int studentID) const {
     map<string, double> grade;
-
     return grade;
 }
 
 int GraduationExam::numPassed() const {
-    return 0;
+    int counter = 0;
+    for (auto s: students) {
+        bool passed = true;
+        for(const auto& g: s.second.getGrades()){
+            if(g.second < 5) {
+                passed = false;
+            }
+        }
+        if (s.second.getAverage() >= 6 && passed) {
+            counter++;
+        }
+    }
+    return counter;
 }
