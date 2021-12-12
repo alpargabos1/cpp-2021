@@ -13,32 +13,31 @@ class GraduationInfo : public IGraduation {
 private:
     GraduationExam &graduationExam;
 public:
-    GraduationInfo(GraduationExam &graduationExam);
+    GraduationInfo(GraduationExam &g) : graduationExam(g) {};
 
-    int getNumEnrolled() const override;
+    virtual int getNumEnrolled() const { return graduationExam.numStudents(); };
 
-    int getNumPassed() const override;
+    virtual int getNumPassed() const { return graduationExam.numPassed(); };
 
-    int getNumFailed() const override;
+    virtual int getNumFailed() const { return getNumEnrolled() - getNumPassed(); };
 
-    Student getStudent(int i) const override;
+    virtual Student getStudent(int id) const { return graduationExam.students.find(id)->second; };
 
-    string getFirstName(int i) const override;
+    virtual string getFirstName(int id) const { return graduationExam.students.find(id)->second.getFirstName(); };
 
-    string getLastName(int i) const override;
+    virtual string getLastName(int id) const { return graduationExam.students.find(id)->second.getLastName(); };
 
-    double getAverage(int i) const override;
+    virtual double getAverage(int id) const { return graduationExam.students.find(id)->second.getAverage(); };
 
-    map<string, double> getResults(int i) const override;
+    virtual map<string, double> getResults(int id) const {
+        return graduationExam.students.find(id)->second.getGrades();
+    };
 
-    void printResults(ostream &ostream1) override;
+    virtual void printResults(ostream &) const;
 
-    void printPassed(ostream &ostream1) override;
+    virtual void printPassed(ostream &) const;
 
-    void printFailed(ostream &ostream1) override;
+    virtual void printFailed(ostream &) const;
 };
-
-
-
 
 #endif //MAIN_CPP_GRADUATIONINFO_H

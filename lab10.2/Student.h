@@ -17,6 +17,7 @@ private:
     string lastName;
     map<string, double> grades;
     double average;
+    bool passed;
 public:
     Student(int, const string &, const string &);
 
@@ -30,9 +31,13 @@ public:
 
     void addGrade(const string &, double);
 
-    double getAverage();
+    bool getPassed() const;
+
+    double getAverage() const;
 
     void computeAverage();
+
+    friend ostream & operator <<(ostream&, const Student&);
 };
 
 
