@@ -40,7 +40,7 @@ public:
 
     int size();
 
-    bool find(T &);
+    bool find(T);
 
     void listItems(ostream & = cout);
 
@@ -93,11 +93,19 @@ void OrderedList<T, LessComp, Equal>::remove(T v) {
 
 template<class T, class LessComp, class Equal>
 int OrderedList<T, LessComp, Equal>::size() {
-    return 0;
+    return sizeof(*this);
 }
 
 template<class T, class LessComp, class Equal>
-bool OrderedList<T, LessComp, Equal>::find(T &) {
+bool OrderedList<T, LessComp, Equal>::find(T v) {
+    Node *act = first;
+    while (act) {
+        if(!Equal()(act->value, v)){
+            return true;
+        }
+        act = act->next;
+    }
+
     return false;
 }
 

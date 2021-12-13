@@ -10,5 +10,14 @@ int main() {
 
     list.remove(6);
     list.listItems();
+
+    cout << list.size() << endl;
+
+    if (list.find(5)) {
+        cout << "True\n";
+    } else {
+        cout << "False\n";
+    }
+
     return 0;
 }
